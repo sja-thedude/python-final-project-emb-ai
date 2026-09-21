@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```python
 >>> from EmotionDetection import emotion_detector
 >>> emotion_detector("I am so happy I am doing this.")
-{'anger': 0.006274985, 'disgust': 0.0025598293, 'fear': 0.009251528, 'joy': 0.9680386, 'sadness': 0.049744144, 'dominant_emotion': 'joy'}
+{'anger': 0.0043339236, 'disgust': 0.00037549555, 'fear': 0.0034732423, 'joy': 0.9947189, 'sadness': 0.012704818, 'dominant_emotion': 'joy'}
 ```
 
 Blank or invalid input (Watson returns HTTP 400) yields `None` for every key,
@@ -42,7 +42,7 @@ and the web app shows `Invalid text! Please try again!`.
 ## Run the unit tests
 
 ```bash
-python3 -m unittest test_emotion_detection.py
+python3.11 -m unittest test_emotion_detection.py
 ```
 
 ## Run the web app

@@ -69,8 +69,8 @@ def emotion_detector(text_to_analyse):
 ## Task 2 — Activity 2 / Task 3 — Activity 2: terminal output (import + formatted output)
 
 ```
-$ python3 -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector(\"I am so happy I am doing this.\"))"
-{'anger': 0.006274985, 'disgust': 0.0025598293, 'fear': 0.009251528, 'joy': 0.9680386, 'sadness': 0.049744144, 'dominant_emotion': 'joy'}
+$ python3.11 -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector(\"I am so happy I am doing this.\"))"
+{'anger': 0.0043339236, 'disgust': 0.00037549555, 'fear': 0.0034732423, 'joy': 0.9947189, 'sadness': 0.012704818, 'dominant_emotion': 'joy'}
 ```
 
 ## Task 3 — Activity 1: formatted output code
@@ -90,7 +90,7 @@ from .emotion_detection import emotion_detector
 ## Task 4 — Activity 2: terminal output validating the package
 
 ```
-$ python3 -c "from EmotionDetection import emotion_detector; print(emotion_detector)"
+$ python3.11 -c "from EmotionDetection import emotion_detector; print(emotion_detector)"
 <function emotion_detector at 0x1006c2980>
 ```
 
@@ -131,12 +131,12 @@ if __name__ == '__main__':
 ## Task 5 — Activity 2: unit test terminal output
 
 ```
-$ python3 -m unittest test_emotion_detection.py
+$ python3.11 -m unittest test_emotion_detection.py
 test_emotion_detector (test_emotion_detection.TestEmotionDetector.test_emotion_detector)
 Each statement should map to its expected dominant emotion. ... ok
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.000s
+Ran 1 test in 0.632s
 
 OK
 ```
